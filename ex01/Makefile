@@ -11,7 +11,7 @@ SRCS =	main.cpp \
 
 OBJS = $(addprefix $(OUTDIR)/, $(SRCS:.cpp=.o))
 DOBJS = $(addprefix $(OUTDIR_DEBUG)/, $(SRCS:.cpp=.o))
-INCFLAGS = -I$(INCLUDES)
+INCFLAGS = -I$(CURDIR)/$(INCLUDES)
 
 CXX = c++
 CXXFLAGS = -Wall -Wextra -Werror -std=c++17
