@@ -1,0 +1,10 @@
+out/
+out_debug/
+*.o
+.vscode/
+*.out
+zombie
+weapon
+replacer
+harl
+harlFilter
