@@ -6,7 +6,7 @@
 /*   By: nluchini <nluchini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 13:59:12 by nluchini          #+#    #+#             */
-/*   Updated: 2025/10/24 17:24:45 by nluchini         ###   ########.fr       */
+/*   Updated: 2025/10/24 17:27:40 by nluchini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ public:
 	HumanB(const std::string& name);
 	
 	void attack(void) const;
-	void setWeapon(Weapon* weapon);
+	void setWeapon(const Weapon& weapon);
 };
 
 #endif

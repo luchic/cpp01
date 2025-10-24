@@ -6,7 +6,7 @@
 /*   By: nluchini <nluchini@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/10/18 17:20:55 by nluchini          #+#    #+#             */
-/*   Updated: 2025/10/24 17:22:07 by nluchini         ###   ########.fr       */
+/*   Updated: 2025/10/24 17:27:30 by nluchini         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ HumanB::HumanB(const std::string& name)
 	: _weapon(nullptr), _name(name)
 {
 }
-void HumanB::setWeapon(Weapon* weapon)
+void HumanB::setWeapon(const Weapon& weapon)
 {
-	_weapon = weapon;
+	_weapon = (Weapon*)&weapon;
 }
 
 void HumanB::attack(void) const
